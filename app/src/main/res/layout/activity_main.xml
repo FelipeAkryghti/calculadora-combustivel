@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/inputGasolina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Preço da Gasolina"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/inputAlcool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Preço do Álcool"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/botaoCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+</LinearLayout>
