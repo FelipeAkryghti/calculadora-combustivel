@@ -1,64 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="24dp"
-    android:gravity="center"
     android:background="@drawable/background_gradient">
 
-    <TextView
-        android:id="@+id/titulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Calculadora Combustível"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:layout_marginBottom="32dp"
-        android:shadowColor="#80000000"
-        android:shadowDx="6"
-        android:shadowDy="4"
-        android:shadowRadius="4"/>
-
-    <EditText
-        android:id="@+id/inputGasolina"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Preço da Gasolina"
-        android:inputType="numberDecimal"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/edit_text_background"
-        android:padding="12dp"
-        android:textColor="#000000"/>
-
-    <EditText
-        android:id="@+id/inputAlcool"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Preço do Álcool"
-        android:inputType="numberDecimal"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/edit_text_background"
-        android:padding="12dp"
-        android:textColor="#000000"/>
-
+    <!-- Botão de Histórico -->
     <Button
-        android:id="@+id/botaoCalcular"
+        android:id="@+id/botaoHistorico"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calcular"
-        android:textColor="#555555"
+        android:text="Histórico"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:backgroundTint="#FFFFFF"
-        android:layout_marginBottom="24dp"/>
+        android:textColor="#555555"/>
 
-    <TextView
-        android:id="@+id/textResultado"
+    <!-- Layout do conteúdo principal -->
+    <LinearLayout
+        android:id="@+id/conteudo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/botaoHistorico"
+        android:layout_above="@id/botaoSobreNos"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculadora Combustível"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="32dp"
+            android:shadowColor="#80000000"
+            android:shadowDx="6"
+            android:shadowDy="4"
+            android:shadowRadius="4"/>
+
+        <EditText
+            android:id="@+id/inputGasolina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Preço da Gasolina"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/inputAlcool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Preço do Álcool"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:textColor="#000000"/>
+
+        <Button
+            android:id="@+id/botaoCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:textColor="#555555"
+            android:backgroundTint="#FFFFFF"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/textResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <!-- Botão Sobre Nós -->
+    <Button
+        android:id="@+id/botaoSobreNos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"/>
-</LinearLayout>
+        android:text="Sobre Nós"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#555555"/>
+</RelativeLayout>
