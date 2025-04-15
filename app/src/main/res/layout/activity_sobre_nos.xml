@@ -12,13 +12,91 @@
         android:gravity="center_horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
             android:text="Sobre Nós"
-            android:textSize="26sp"
-            android:textStyle="bold"
             android:textColor="#FFFFFF"
-            android:layout_marginBottom="24dp"/>
+            android:textSize="26sp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_background"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/felipeprofile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Felipe Caldeira Akryghti"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_background"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/VictorFoto" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Victor Andrade"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_background"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/FernandassoFoto" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Fernando Greca"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
 
         <!-- Felipe -->
         <LinearLayout
@@ -31,7 +109,7 @@
             <ImageView
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:src="@drawable/felipeprofile"
+                android:src="@drawable/KawanFoto"
                 android:scaleType="centerCrop"
                 android:layout_gravity="center"
                 android:background="@drawable/circle_background"
@@ -40,13 +118,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Felipe Caldeira Akryghti"
+                android:text="Kawan Shigueo"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:layout_marginTop="8dp"/>
         </LinearLayout>
 
-        <!-- Adicione aqui os outros 3 integrantes no mesmo padrão -->
 
     </LinearLayout>
 </ScrollView>
