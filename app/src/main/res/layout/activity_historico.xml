@@ -24,7 +24,10 @@
             android:id="@+id/textHistorico"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=""
-            android:textColor="#FFFFFF"/>
+            android:text="Carregando..."
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:layout_margin="16dp"
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 </ScrollView>
