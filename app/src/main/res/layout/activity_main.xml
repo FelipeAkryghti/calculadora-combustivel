@@ -6,7 +6,6 @@
     android:padding="24dp"
     android:background="@drawable/background_gradient">
 
-    <!-- Botão de Histórico -->
     <Button
         android:id="@+id/botaoHistorico"
         android:layout_width="wrap_content"
@@ -18,7 +17,6 @@
         android:backgroundTint="#FFFFFF"
         android:textColor="#555555"/>
 
-    <!-- Layout do conteúdo principal -->
     <LinearLayout
         android:id="@+id/conteudo"
         android:layout_width="match_parent"
@@ -84,7 +82,6 @@
             android:textColor="#FFFFFF"/>
     </LinearLayout>
 
-    <!-- Botão Sobre Nós -->
     <Button
         android:id="@+id/botaoSobreNos"
         android:layout_width="wrap_content"
