@@ -45,6 +45,10 @@ class MainActivity : AppCompatActivity() {
 
             textResultado.text = "Compensa usar $melhor!"
 
+            // Limpa os campos de input
+            inputGasolina.setText("")
+            inputAlcool.setText("")
+
             // Salva no banco de dados
             lifecycleScope.launch {
                 dao.inserir(Calculo(precoGasolina = gasolina, precoAlcool = alcool, resultado = melhor))
@@ -52,6 +56,7 @@ class MainActivity : AppCompatActivity() {
                 println("Cálculo inserido: Gasolina = $gasolina, Álcool = $alcool, Resultado = $melhor")
             }
         }
+
 
         botaoHistorico.setOnClickListener {
             val intent = Intent(this, HistoricoActivity::class.java)

@@ -3,31 +3,57 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="24dp"
-    android:background="@drawable/background_gradient">
+    android:background="@drawable/background_gradient"
+    android:fillViewport="true"> <!-- Garante que o conteúdo ocupe toda a tela -->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tituloHistorico"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Histórico de Cálculos"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"
-            android:layout_marginBottom="16dp"/>
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tituloHistorico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Histórico de Cálculos"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/botaoLimpar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF4444"
+                android:text="Limpar"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/textHistorico"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Carregando..."
-            android:padding="16dp"
+            android:padding="8dp"
             android:textSize="16sp"
-            android:layout_margin="16dp"
+            android:layout_marginBottom="16dp"
             android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/botaoVoltar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voltar"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#555555"
+            android:layout_marginTop="16dp"/>
     </LinearLayout>
 </ScrollView>

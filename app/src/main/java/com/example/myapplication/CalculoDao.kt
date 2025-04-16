@@ -12,4 +12,7 @@ interface CalculoDao {
 
     @Query("SELECT * FROM calculos")
     suspend fun buscarTodos(): List<Calculo>
+
+    @Query("DELETE FROM calculos")
+    suspend fun apagarTodos()
 }

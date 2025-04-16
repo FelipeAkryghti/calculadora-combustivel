@@ -8,24 +8,40 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center_horizontal">
+        android:orientation="vertical">
+
+        <!-- Botão de Voltar no canto superior direito -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/botaoVoltar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voltar"
+                android:backgroundTint="#FFFFFF"
+                android:textColor="#555555"/>
+        </LinearLayout>
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
+            android:gravity="center"
             android:text="Sobre Nós"
             android:textColor="#FFFFFF"
             android:textSize="26sp"
-            android:gravity="center"
-            android:orientation="vertical"
             android:textStyle="bold" />
 
+        <!-- Felipe -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:gravity="center"
             android:orientation="vertical">
@@ -48,9 +64,10 @@
                 android:textSize="16sp" />
         </LinearLayout>
 
+        <!-- Victor -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:gravity="center"
             android:orientation="vertical">
@@ -73,9 +90,10 @@
                 android:textSize="16sp" />
         </LinearLayout>
 
+        <!-- Fernando -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:gravity="center"
             android:orientation="vertical">
@@ -98,32 +116,31 @@
                 android:textSize="16sp" />
         </LinearLayout>
 
-        <!-- Felipe -->
+        <!-- Kawan -->
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_marginBottom="24dp"
             android:gravity="center"
-            android:layout_marginBottom="24dp">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:src="@drawable/kawanfoto"
-                android:scaleType="centerCrop"
                 android:layout_gravity="center"
                 android:background="@drawable/circle_background"
-                android:clipToOutline="true"/>
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kawanfoto" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:text="Kawan Shigueo"
                 android:textColor="#FFFFFF"
-                android:textSize="16sp"
-                android:layout_marginTop="8dp"/>
+                android:textSize="16sp" />
         </LinearLayout>
-
 
     </LinearLayout>
 </ScrollView>
