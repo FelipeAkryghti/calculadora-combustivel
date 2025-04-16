@@ -30,7 +30,7 @@ class HistoricoActivity : AppCompatActivity() {
                 textHistorico.text = "Nenhum cálculo registrado."
             } else {
                 val historicoFormatado = listaCalculos.joinToString("\n\n") {
-                    "Álcool: R$ ${it.precoAlcool} | Gasolina: R$ ${it.precoGasolina} Melhor: ${it.resultado}"
+                    "Álcool: R$ ${it.precoAlcool} | Gasolina: R$ ${it.precoGasolina} \nMelhor: ${it.resultado}"
                 }
                 textHistorico.text = historicoFormatado
                 // Log para verificar a lista carregada
